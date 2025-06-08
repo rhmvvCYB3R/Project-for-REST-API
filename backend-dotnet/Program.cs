@@ -19,15 +19,19 @@ namespace REST_project
             builder.Services.AddControllers();
 
             // ✅ Настраиваем CORS с конкретным Origin (лучше, чем AllowAnyOrigin)
-            builder.Services.AddCors(options =>
-            {
-                options.AddPolicy("AllowFrontend", policy =>
-                {
-                    policy.WithOrigins("http://localhost:5500") // ✅ или твой фронт на Vite
-                          .AllowAnyMethod()
-                          .AllowAnyHeader();
-                });
-            });
+           builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins(
+            "http://localhost:5500",
+            "https://exchanger-06k9.onrender.com"  // продакшен фронтенд
+        )
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    });
+});
+
 
             builder.Services.AddOpenApi();
             builder.Services.AddHttpContextAccessor();

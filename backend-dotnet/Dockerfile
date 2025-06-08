@@ -1,15 +1,17 @@
-FROM mcr.microsoft.com/dotnet/sdk:9.0
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
 
-# Копируем только csproj и восстанавливаем зависимости
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /src
+
 COPY RESTProject.csproj ./
 RUN dotnet restore RESTProject.csproj
 
-# Копируем все остальные файлы в контейнер
 COPY . ./
+RUN dotnet publish RESTProject.csproj -c Release -o /app/publish
 
-# Публикуем в папку out
-RUN dotnet publish RESTProject.csproj -c Release -o out
+FROM base AS final
+WORKDIR /app
+COPY --from=build /app/publish .
+ENTRYPOINT ["dotnet", "RESTProject.dll"]
 
-# Запускаем приложение
-ENTRYPOINT ["dotnet", "out/RESTProject.dll"]
