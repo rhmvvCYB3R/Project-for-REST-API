@@ -955,11 +955,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rhmvv/Desktop/REST project/REST project/REST project.csproj",
+      "projectUniqueName": "/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/REST project.csproj",
       "projectName": "REST project",
-      "projectPath": "/home/rhmvv/Desktop/REST project/REST project/REST project.csproj",
+      "projectPath": "/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/REST project.csproj",
       "packagesPath": "/home/rhmvv/.nuget/packages/",
-      "outputPath": "/home/rhmvv/Desktop/REST project/REST project/obj/",
+      "outputPath": "/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/rhmvv/.nuget/NuGet/NuGet.Config"
