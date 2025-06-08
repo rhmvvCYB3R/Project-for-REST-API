@@ -91,15 +91,10 @@ C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Swashbuc
 /home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/ref/REST project.dll
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/appsettings.Development.json
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/REST project.staticwebassets.endpoints.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/publish/publish/web.config
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/publish/web.config
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/appsettings.json
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/publish/appsettings.Development.json
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/publish/appsettings.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/publish/publish/appsettings.Development.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/publish/publish/appsettings.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/publish/publish/REST project.staticwebassets.endpoints.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/publish/REST project.staticwebassets.endpoints.json
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/publish/RestProject.deps.json
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/publish/RestProject.runtimeconfig.json
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/REST project
@@ -145,3 +140,4 @@ C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Swashbuc
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/obj/Debug/net9.0/REST project.pdb
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/obj/Debug/net9.0/REST project.genruntimeconfig.cache
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/obj/Debug/net9.0/ref/REST project.dll
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Debug/net9.0/publish/RESTproject.staticwebassets.endpoints.json

@@ -1,16 +1,10 @@
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/RestProject
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/publish/web.config
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/RESTproject
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/appsettings.Development.json
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/appsettings.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/publish/appsettings.Development.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/publish/appsettings.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/publish/REST project.deps.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/publish/REST project.runtimeconfig.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/publish/REST project.staticwebassets.endpoints.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/RestProject.dll
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/RestProject.deps.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/RestProject.runtimeconfig.json
-/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/RestProject.pdb
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/RESTproject.dll
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/RESTproject.deps.json
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/RESTproject.runtimeconfig.json
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/RESTproject.pdb
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/Microsoft.AspNetCore.OpenApi.dll
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/publish/Microsoft.IdentityModel.Abstractions.dll

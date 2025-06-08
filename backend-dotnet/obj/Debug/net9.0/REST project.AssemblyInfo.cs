@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("REST project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a579f4de18798fbe511c7644d1ae6ca536ad3046")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edc68508dcd90d9357c5d0f1e9398db800811429")]
 [assembly: System.Reflection.AssemblyProductAttribute("REST project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("REST project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
