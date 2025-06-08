@@ -30,18 +30,22 @@ namespace REST_project.Controllers.Services
 
         public string? Authinticate(UserDTO user)
         {
-            UserDTO? existingUser = _users.FirstOrDefault(u => u.Username == user.Username);
+            UserDTO? existingUser = _users.FirstOrDefault(u => u.Username == user.Username && u.Password == user.Password);
             if (existingUser == null)
                 return null;
 
-            string key = _configuration.GetRequiredSection("JwtSettings")["SecretKey"] ?? throw new ArgumentNullException();
-            JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
+            string key = _configuration.GetRequiredSection("JwtSettings")["SecretKey"] 
+                         ?? throw new ArgumentNullException("JwtSettings:SecretKey not found");
 
-            var tokenDescriptor = new SecurityTokenDescriptor()
+            var tokenHandler = new JwtSecurityTokenHandler();
+
+            var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new System.Security.Claims.ClaimsIdentity([new Claim(ClaimTypes.Name, user.Username)]),
+                Subject = new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, user.Username) }),
                 Expires = DateTime.UtcNow.AddHours(1),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)), SecurityAlgorithms.HmacSha256Signature)
+                SigningCredentials = new SigningCredentials(
+                    new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)), 
+                    SecurityAlgorithms.HmacSha256Signature)
             };
 
             SecurityToken token = tokenHandler.CreateToken(tokenDescriptor);
@@ -53,6 +57,7 @@ namespace REST_project.Controllers.Services
             var userName = _contexAccessor.HttpContext?.User.FindFirst(ClaimTypes.Name)?.Value;
             return _users.FirstOrDefault(u => u.Username == userName);
         }
+
         public bool PutUser(UserDTO updatedUser)
         {
             var user = _users.FirstOrDefault(u => u.Username == updatedUser.Username);
