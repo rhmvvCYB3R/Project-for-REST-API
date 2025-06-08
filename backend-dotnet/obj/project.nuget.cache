@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ylxz8ZbP8dc=",
+  "dgSpecHash": "ncqpIJ479z8=",
   "success": true,
   "projectFilePath": "/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/RESTProject.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,9 @@
     "/home/rhmvv/.nuget/packages/swashbuckle.aspnetcore.swagger/8.1.1/swashbuckle.aspnetcore.swagger.8.1.1.nupkg.sha512",
     "/home/rhmvv/.nuget/packages/swashbuckle.aspnetcore.swaggergen/8.1.1/swashbuckle.aspnetcore.swaggergen.8.1.1.nupkg.sha512",
     "/home/rhmvv/.nuget/packages/swashbuckle.aspnetcore.swaggerui/8.1.1/swashbuckle.aspnetcore.swaggerui.8.1.1.nupkg.sha512",
-    "/home/rhmvv/.nuget/packages/system.identitymodel.tokens.jwt/8.9.0/system.identitymodel.tokens.jwt.8.9.0.nupkg.sha512"
+    "/home/rhmvv/.nuget/packages/system.identitymodel.tokens.jwt/8.9.0/system.identitymodel.tokens.jwt.8.9.0.nupkg.sha512",
+    "/home/rhmvv/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/9.0.4/microsoft.netcore.app.runtime.linux-x64.9.0.4.nupkg.sha512",
+    "/home/rhmvv/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/9.0.4/microsoft.aspnetcore.app.runtime.linux-x64.9.0.4.nupkg.sha512"
   ],
   "logs": []
 }

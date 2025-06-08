@@ -44,3 +44,9 @@
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/obj/Release/net9.0/RESTProject.pdb
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/obj/Release/net9.0/RESTProject.genruntimeconfig.cache
 /home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/obj/Release/net9.0/ref/RESTProject.dll
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Release/net9.0/out/web.config
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Release/net9.0/out/appsettings.Development.json
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Release/net9.0/out/appsettings.json
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Release/net9.0/out/RESTProject.deps.json
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Release/net9.0/out/RESTProject.runtimeconfig.json
+/home/rhmvv/Desktop/Project-for-REST-API/backend-dotnet/bin/Release/net9.0/out/RESTProject.staticwebassets.endpoints.json
