@@ -18,15 +18,14 @@ namespace REST_project
             // Add services to the container.
             builder.Services.AddControllers();
 
-            // ✅ Добавляем CORS-политику
+            // ✅ Настраиваем CORS с конкретным Origin (лучше, чем AllowAnyOrigin)
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAll", policy =>
+                options.AddPolicy("AllowFrontend", policy =>
                 {
-                    policy
-                        .AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader();
+                    policy.WithOrigins("http://localhost:5500") // ✅ или твой фронт на Vite
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
                 });
             });
 
@@ -82,10 +81,10 @@ namespace REST_project
 
             var app = builder.Build();
 
-            // ✅ CORS — ВСЕГДА должен быть до редиректа и авторизации
-            app.UseCors("AllowAll");
+            // ✅ ВКЛЮЧАЕМ CORS СРАЗУ после Build и до любого middleware
+            app.UseCors("AllowFrontend");
 
-            // ❗️НЕ ставим здесь проверку на `app.Environment.IsDevelopment()`, т.к. на Render — Production
+            // Swagger работает и в production
             app.UseSwagger();
             app.UseSwaggerUI();
 
