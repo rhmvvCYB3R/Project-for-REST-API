@@ -1,0 +1,91 @@
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/appsettings.Development.json
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/appsettings.json
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/REST project.staticwebassets.endpoints.json
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/REST project.exe
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/REST project.deps.json
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/REST project.runtimeconfig.json
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/REST project.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/REST project.pdb
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Microsoft.OpenApi.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Scalar.AspNetCore.dll
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/REST project.csproj.AssemblyReference.cache
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/REST project.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/REST project.AssemblyInfoInputs.cache
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/REST project.AssemblyInfo.cs
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/REST project.csproj.CoreCompileInputs.cache
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/REST project.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/REST project.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/scopedcss/bundle/REST project.styles.css
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/staticwebassets.build.json
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/staticwebassets.development.json
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/staticwebassets/msbuild.REST project.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/staticwebassets/msbuild.REST project.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/staticwebassets/msbuild.build.REST project.props
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.REST project.props
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.REST project.props
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/staticwebassets.pack.json
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/staticwebassets.upToDateCheck.txt
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/REST pro.4896DFCC.Up2Date
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/REST project.dll
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/refint/REST project.dll
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/REST project.pdb
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/REST project.genruntimeconfig.cache
+C:/Users/Kirill/source/repos/REST project/REST project/obj/Debug/net9.0/ref/REST project.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/Kirill/source/repos/REST project/REST project/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/appsettings.Development.json
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/appsettings.json
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/REST project.staticwebassets.endpoints.json
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/REST project
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/REST project.deps.json
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/REST project.runtimeconfig.json
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/REST project.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/REST project.pdb
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Scalar.AspNetCore.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/rhmvv/Desktop/REST project/REST project/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/REST project.csproj.AssemblyReference.cache
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/REST project.GeneratedMSBuildEditorConfig.editorconfig
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/REST project.AssemblyInfoInputs.cache
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/REST project.AssemblyInfo.cs
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/REST project.csproj.CoreCompileInputs.cache
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/REST project.MvcApplicationPartsAssemblyInfo.cs
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/REST project.MvcApplicationPartsAssemblyInfo.cache
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/scopedcss/bundle/REST project.styles.css
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/staticwebassets.build.json
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/staticwebassets.development.json
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/staticwebassets/msbuild.REST project.Microsoft.AspNetCore.StaticWebAssets.props
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/staticwebassets/msbuild.REST project.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/staticwebassets/msbuild.build.REST project.props
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.REST project.props
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.REST project.props
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/staticwebassets.pack.json
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/REST pro.4896DFCC.Up2Date
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/REST project.dll
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/refint/REST project.dll
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/REST project.pdb
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/REST project.genruntimeconfig.cache
+/home/rhmvv/Desktop/REST project/REST project/obj/Debug/net9.0/ref/REST project.dll
