@@ -2,8 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using REST_project.Controllers.Models;
 using REST_project.Controllers.Services.Interface;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System;
 
 namespace REST_project.Controllers
 {
@@ -21,54 +20,100 @@ namespace REST_project.Controllers
         [HttpPost("register")]
         public IActionResult Register([FromBody] UserDTO user)
         {
-            if (_userMockService.Register(user))
-                return Ok(new {message = "User registered." });
-            return BadRequest(new { message = "User already exists." });
+            try
+            {
+                if (_userMockService.Register(user))
+                    return Ok(new { message = "User registered." });
+
+                return BadRequest(new { message = "User already exists." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Internal server error during registration", error = ex.Message });
+            }
         }
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] UserDTO user)
         {
-            string? token = _userMockService.Authinticate(user);
-            if(token == null)
-                return Unauthorized( new { message = "Invalid username or passwaord." });
-            return Ok(new { token });
+            try
+            {
+                if (user == null || string.IsNullOrWhiteSpace(user.Username) || string.IsNullOrWhiteSpace(user.Password))
+                    return BadRequest(new { message = "Invalid request: missing username or password." });
+
+                string? token = _userMockService.Authinticate(user);
+
+                if (token == null)
+                    return Unauthorized(new { message = "Invalid username or password." });
+
+                return Ok(new { token });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Internal server error during login", error = ex.Message });
+            }
         }
 
         [HttpGet("secure")]
         [Authorize]
         public IActionResult Secure()
         {
-            return Ok(new { message = $"Hi, {_userMockService.getCurrentUser()!.Username}!!! This is secure endpoint." });
+            try
+            {
+                var user = _userMockService.getCurrentUser();
+                if (user == null)
+                    return Unauthorized(new { message = "Unauthorized access." });
+
+                return Ok(new { message = $"Hi, {user.Username}!!! This is a secure endpoint." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Internal server error on secure endpoint", error = ex.Message });
+            }
         }
 
         [HttpPut("update")]
         [Authorize]
         public IActionResult UpdateUser([FromBody] UserDTO updatedUser)
         {
-            var currentUser = _userMockService.getCurrentUser();
-            if (currentUser == null || currentUser.Username != updatedUser.Username)
-                return Unauthorized(new { message = "Unauthorized user." });
+            try
+            {
+                var currentUser = _userMockService.getCurrentUser();
+                if (currentUser == null || currentUser.Username != updatedUser.Username)
+                    return Unauthorized(new { message = "Unauthorized user." });
 
-            bool result = _userMockService.PutUser(updatedUser);
-            if (result)
-                return Ok(new { message = "Update successful" });
-            return NotFound(new { message = "User not found." });
+                bool result = _userMockService.PutUser(updatedUser);
+                if (result)
+                    return Ok(new { message = "Update successful" });
+
+                return NotFound(new { message = "User not found." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Internal server error during update", error = ex.Message });
+            }
         }
 
         [HttpDelete("delete")]
         [Authorize]
         public IActionResult DeleteUser()
         {
-            var currentUser = _userMockService.getCurrentUser();
-            if (currentUser == null)
-                return Unauthorized(new { message = "Unauthorized user." });
+            try
+            {
+                var currentUser = _userMockService.getCurrentUser();
+                if (currentUser == null)
+                    return Unauthorized(new { message = "Unauthorized user." });
 
-            bool result = _userMockService.DeleteUser(currentUser.Username);
-            if (result)
-                return Ok(new { message = "User was deleted." });
-            return NotFound(new { message = "User not found." });
+                bool result = _userMockService.DeleteUser(currentUser.Username);
+                if (result)
+                    return Ok(new { message = "User was deleted." });
+
+                return NotFound(new { message = "User not found." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Internal server error during delete", error = ex.Message });
+            }
         }
-
     }
 }
