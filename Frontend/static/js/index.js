@@ -3,6 +3,7 @@ const navLinks = document.getElementById('nav-links');
 const token = localStorage.getItem('jwt_token');
 const username = localStorage.getItem('username');
 
+
 if (token && username) {
     updateNavbarForLoggedInUser(username);
 } else {
