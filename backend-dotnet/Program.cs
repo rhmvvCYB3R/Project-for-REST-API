@@ -5,7 +5,6 @@ using Microsoft.OpenApi.Models;
 using REST_project.Controllers.Services;
 using REST_project.Controllers.Services.Interface;
 using Scalar.AspNetCore;
-using System.Security.Cryptography;
 using System.Text;
 
 namespace REST_project
@@ -17,23 +16,24 @@ namespace REST_project
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
 
-            // Добавляем CORS-политику
+            // ✅ Добавляем CORS-политику
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll", policy =>
                 {
-                    policy.AllowAnyOrigin()
-                          .AllowAnyMethod()
-                          .AllowAnyHeader();
+                    policy
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
                 });
             });
 
             builder.Services.AddOpenApi();
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddHttpClient<IExchangeRateService, ExchangeRateService>();
+
             builder.Services.AddSwaggerGen(options =>
             {
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -43,10 +43,10 @@ namespace REST_project
                     Scheme = "Bearer",
                     BearerFormat = "JWT",
                     In = ParameterLocation.Header,
-                    Description = "Example: Bearer {token}."
+                    Description = "Example: Bearer {token}"
                 });
 
-                options.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
                     {
                         new OpenApiSecurityScheme
@@ -66,7 +66,8 @@ namespace REST_project
                 .AddJwtBearer(options =>
                 {
                     string key = builder.Configuration.GetRequiredSection("JwtSettings")["SecretKey"]
-                        ?? throw new ArgumentNullException();
+                        ?? throw new ArgumentNullException("JwtSettings:SecretKey not found in configuration");
+
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuerSigningKey = true,
@@ -81,19 +82,14 @@ namespace REST_project
 
             var app = builder.Build();
 
-            if (app.Environment.IsDevelopment())
-            {
-                app.MapOpenApi();
-                app.MapScalarApiReference();
+            // ✅ CORS — ВСЕГДА должен быть до редиректа и авторизации
+            app.UseCors("AllowAll");
 
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            // ❗️НЕ ставим здесь проверку на `app.Environment.IsDevelopment()`, т.к. на Render — Production
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             app.UseHttpsRedirection();
-
-            // Включаем CORS
-            app.UseCors("AllowAll");
 
             app.UseAuthentication();
             app.UseAuthorization();
@@ -104,3 +100,4 @@ namespace REST_project
         }
     }
 }
+
